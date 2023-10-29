@@ -18,7 +18,7 @@ Usamos o miro para fazer toda a parte de DDD (fase 1) e modelagem do banco de da
 - **infra-mongo:** administrar a infra do banco de dados MongoDB.
 - **infra-postgres:** administrar a infra do banco de dados PostgreSQL.
 
-### :minidisc: Justificativa dos bancos de dados
+### :minidisc: Justificativa e modelagem dos bancos de dados
 
 #### Clientes e Produtos
 
@@ -27,4 +27,6 @@ Escolhemos o banco de dados relacional (Postgres) pois são dados cadastrais ond
 #### Pedidos
 
 Já para os pedidos, vamos usar o banco de dados não relacional de documentos (MongoDB) porque precisamos de flexibilidade no schema, uma vez que a parte de pagamento pode vir de diferentes providers. Outro motivo muito relevante, é que a parte de pedidos é basicamente o coração do sistema, onde terá um volume muito grande de dados e que deve ser possível escalar horizontalmente para que proporcione uma experiência melhor para os clientes, sem problemas de lentidão para fazer os pedidos e consultar o status do mesmo.
+
+![image](https://github.com/SOAT-01/.github/assets/23150778/a5e5f352-52c5-4c27-89fd-4efe4237ecde)
 
