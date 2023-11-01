@@ -4,10 +4,11 @@ Essa organização foi criada para manter os repositórios usados no projeto Tec
 
 ### :page_with_curl: Documentos do projeto
 
-Usamos o miro para fazer toda a parte de DDD (fase 1) e modelagem do banco de dados (fase 3).
+Usamos o miro para fazer toda a parte de DDD (fase 1) e modelagem do banco de dados (fase 3). A documentação técnica da arquitetura se encontra nas páginas Wiki
 
 - [DDD](https://miro.com/app/board/uXjVMKm6NN0=/?moveToWidget=3458764567529814607&cot=14)
 - [Modelagem Banco de dados](https://miro.com/app/board/uXjVMKm6NN0=/?moveToWidget=3458764567529883724&cot=14)
+- [Desenho da Arquitetura](https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-3)
 
 ### :file_folder: Estrutura de repositórios:
 
