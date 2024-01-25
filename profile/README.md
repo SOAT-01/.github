@@ -2,8 +2,8 @@
 
 Essa organização foi criada para manter os repositórios usados no projeto Tech Challenge do curso de Arquitetura de Software da Postech da FIAP.
 
-### Fase 4 - Desenho da Arquitetura
-
+### Fase 4 - Arquitetura
+A aplicação desenvolvida nas fases anteriores foi quebrada em 4 serviços independentes, de acordo com o diagrama abaixo. As setas pontilhadas entre os Pods e SVCs representam que existe uma comunição (via HTTP request) entre os serviços.
 ![image](https://raw.githubusercontent.com/SOAT-01/.github/main/fase-4.drawio.png)
 
 ### :page_with_curl: Documentos do projeto
