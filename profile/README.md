@@ -11,15 +11,34 @@ Usamos o miro para fazer toda a parte de DDD (fase 1) e modelagem do banco de da
 - [Desenho da Arquitetura](https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-3)
 
 ### :file_folder: Estrutura de repositórios:
-
-- **tech-challenge-app:** aplicação da lanchonete em node.js
+#### Gerais
 - **lambda-authorizer:** serverless contendo a criação da rota para geração de token para o usuário, lambda authorizer e criação do api gateway.
-- **infra-k8s-resources:** administrar os recursos Kubernetes do projeto Tech Challenge.
 - **infra-k8s-cluster:** administrar a infra do cluster Kubernetes do projeto.
+- **infra-sonarqube:** administrar máquina ec2 para subir o Sonarqube.
+#### Clientes
+- **clientes-app:** aplicação do serviço em node.js.
+- **infra-clientes-postgres:** administrar a infra do banco de dados PostgreSQL.
+- **infra-clientes-k8s:** administrar os recursos Kubernetes do serviço.
+#### Produtos
+- **produtos-app:** aplicação do serviço em node.js.
+- **infra-produtos-postgres:** administrar a infra do banco de dados PostgreSQL.
+- **infra-produtos-k8s:** administrar os recursos Kubernetes do serviço.
+#### Pedidos
+- **pedidos-app:** aplicação do serviço em node.js.
+- **infra-pedidos-mongo:** administrar a infra do banco de dados MongoDB.
+- **infra-pedidos-k8s:** administrar os recursos Kubernetes do serviço.
+#### Pagamentos
+- **pagamentos-app:** aplicação do serviço em node.js.
+- **infra-pagamentos-mongo:** administrar a infra do banco de dados MongoDB.
+- **infra-pagamentos-k8s:** administrar os recursos Kubernetes do serviço.
+
+### Repositórios Deprecated (Fase 3):
+- **infra-k8s-resources:** administrar os recursos Kubernetes do projeto Tech Challenge.
+- **tech-challenge-app:** aplicação da lanchonete em node.js
 - **infra-mongo:** administrar a infra do banco de dados MongoDB.
 - **infra-postgres:** administrar a infra do banco de dados PostgreSQL.
 
-### :minidisc: Justificativa e modelagem dos bancos de dados
+### :minidisc: Justificativa e modelagem dos bancos de dados (Fase 3)
 
 #### Clientes e Produtos
 
