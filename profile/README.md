@@ -12,6 +12,8 @@ Usamos o miro para fazer toda a parte de DDD (fase 1) e modelagem do banco de da
 
 - [DDD](https://miro.com/app/board/uXjVMKm6NN0=/?moveToWidget=3458764567529814607&cot=14)
 - [Modelagem Banco de dados](https://miro.com/app/board/uXjVMKm6NN0=/?moveToWidget=3458764567529883724&cot=14)
+- [Arquitetura Fase 3](https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-3)
+- [Arquitetura Fase 2](https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-2)
 
 ### :file_folder: Estrutura de repositórios:
 #### Gerais
