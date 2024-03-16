@@ -2,9 +2,18 @@
 
 Essa organização foi criada para manter os repositórios usados no projeto Tech Challenge do curso de Arquitetura de Software da Postech da FIAP.
 
-### Fase 4 - Arquitetura
-A aplicação desenvolvida nas fases anteriores foi quebrada em 4 serviços independentes, de acordo com o diagrama abaixo. As setas pontilhadas entre os Pods e SVCs representam que existe uma comunição (via HTTP request) entre os serviços.
-![image](https://raw.githubusercontent.com/SOAT-01/.github/main/fase-4.drawio.png)
+## Fase 5 - Arquitetura
+
+Para a Fase 5, a aplicação anterior (https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-4) foi modificada aplicando o padrão de SAGA coreografada usando o serviço de mensageria SQS da AWS, onde o principal motivador desta escolha foi o fator simplicidade, considerando que existiam poucas comunicações implementadas entre os serviços.
+
+![image](https://github.com/SOAT-01/tech-challenge-app/assets/15642927/487b171a-1375-40a1-b42c-6f1bbcf72a01)
+
+### Fluxo dos Pedidos
+
+O fluxo de vida de um pedido criado no sistema segue o diagrama abaixo:
+
+![fase5-v2-fluxo drawio](https://github.com/SOAT-01/tech-challenge-app/assets/15642927/03bd5b00-d40b-4657-b07a-530b4f4fbd8d)
+
 
 ### :page_with_curl: Documentos do projeto
 
@@ -12,12 +21,14 @@ Usamos o miro para fazer toda a parte de DDD (fase 1) e modelagem do banco de da
 
 - [DDD](https://miro.com/app/board/uXjVMKm6NN0=/?moveToWidget=3458764567529814607&cot=14)
 - [Modelagem Banco de dados](https://miro.com/app/board/uXjVMKm6NN0=/?moveToWidget=3458764567529883724&cot=14)
+- [Arquitetura Fase 4](https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-4)
 - [Arquitetura Fase 3](https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-3)
 - [Arquitetura Fase 2](https://github.com/SOAT-01/tech-challenge-app/wiki/Fase-2)
 
 ### :file_folder: Estrutura de repositórios:
 #### Gerais
 - **lambda-authorizer:** serverless contendo a criação da rota para geração de token para o usuário, lambda authorizer e criação do api gateway.
+- **lambda-notification:** serverless contendo a criação de função que recebe uma mensagem (SQS) de notificação de status do Pedido e faz um envio de e-mail notificando o cliente.
 - **infra-k8s-cluster:** administrar a infra do cluster Kubernetes do projeto.
 - **infra-sonarqube:** administrar máquina ec2 para subir o Sonarqube.
 #### Clientes
